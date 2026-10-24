@@ -1,5 +1,6 @@
 i dont know why its called website sniffer, it was originally going to be some code that checks a certain thing, but i scrapped it. instead, you get my extravaganza of a python script!!
 
+to open, download either main.py or the distribution. remember to extract!!!!
 
 All game guides: 
 1. Rock paper scissors
