@@ -1,8 +1,5 @@
 import random
 import time
-import selenium
-from selenium import webdriver
-options = webdriver.EdgeOptions()
 
 
 
@@ -512,7 +509,7 @@ def masonspurgatory(evilness): # done
 
 
 
-gameselector = input("what would you like to play? 1 = rock paper scissors, 2 = random stuff go, 3 = mind reader game, 4 = triple t artwork, 5 = level sim, 6 = mason's purgatory, 7 = triple t irl, 8 = random stuff go the sequel") # game selector
+gameselector = input("what would you like to play? 1 = rock paper scissors, 2 = random stuff go, 3 = mind reader game, 4 = triple t artwork, 5 = level sim, 6 = mason's purgatory, 7 = random stuff go the sequel") # game selector
 if gameselector == "1":
     rpsdif = input("what difficulty? 1 through 5")
     rockpaperscissors(rpsdif)
@@ -531,9 +528,6 @@ elif gameselector == "6":
     evilnessmason = evilnessmason * 10
     masonspurgatory(evilnessmason)
 elif gameselector == "7":
-    driver = webdriver.Edge(options=options)
-    driver.get("https://en.wikipedia.org/wiki/Tung_Tung_Tung_Sahur")
-elif gameselector == "8":
     print("grrrrrrrrrrrrr im tripple t")
     time.sleep(0.25)
     print("grrrrrrrrrrrrr im tripple t")
