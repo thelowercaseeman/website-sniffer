@@ -1,4 +1,15 @@
 import random
+import time
+import selenium
+from selenium import webdriver
+options = webdriver.EdgeOptions()
+
+
+
+
+
+
+
 
 global level
 global rocupgrades
@@ -477,7 +488,31 @@ def levelsim(): # a game
         else:
             print("twin that aint an option")
 
-gameselector = input("what would you like to play? 1 = rock paper scissors, 2 = random stuff go, 3 = mind reader game, 4 = triple t artwork, 5 = level sim") # game selector
+
+def masonspurgatory(evilness): # done
+    time.sleep(evilness)
+    print("this")
+    time.sleep(evilness)
+    print("is")
+    time.sleep(evilness)
+    print("a")
+    time.sleep(evilness)
+    print("text")
+    time.sleep(evilness)
+    print("adventure")
+    time.sleep(evilness)
+    print("game")
+    time.sleep(evilness)
+    print("!!!!!!")
+    time.sleep(evilness)
+    print("haha you waited this long for NOTHING")
+
+
+
+
+
+
+gameselector = input("what would you like to play? 1 = rock paper scissors, 2 = random stuff go, 3 = mind reader game, 4 = triple t artwork, 5 = level sim, 6 = mason's purgatory, 7 = triple t irl, 8 = random stuff go the sequel") # game selector
 if gameselector == "1":
     rpsdif = input("what difficulty? 1 through 5")
     rockpaperscissors(rpsdif)
@@ -490,5 +525,71 @@ elif gameselector == "4":
 elif gameselector == "5":
     print("time to play some straight idiocracy")
     levelsim()
+elif gameselector == "6":
+    evilnessmason = input("how long is ur attention span? please give a number and ONLY A NUMBER")
+    evilnessmason = int(evilnessmason)
+    evilnessmason = evilnessmason * 10
+    masonspurgatory(evilnessmason)
+elif gameselector == "7":
+    driver = webdriver.Edge(options=options)
+    driver.get("https://en.wikipedia.org/wiki/Tung_Tung_Tung_Sahur")
+elif gameselector == "8":
+    print("grrrrrrrrrrrrr im tripple t")
+    time.sleep(0.25)
+    print("grrrrrrrrrrrrr im tripple t")
+    time.sleep(0.25)
+    print("grrrrrrrrrrrrr im tripple t")
+    time.sleep(0.25)
+    print("grrrrrrrrrrrrr im tripple t")
+    time.sleep(0.25)
+    print("grrrrrrrrrrrrr im tripple t")
+    time.sleep(0.25)
+    print("grrrrrrrrrrrrr im tripple t")
+    time.sleep(0.25)
+    print("grrrrrrrrrrrrr im tripple t")
+    time.sleep(0.25)
+    print("grrrrrrrrrrrrr im tripple t")
+    time.sleep(0.25)
+    print("bangerang")
+    time.sleep(0.25)
+    print("grrrrrrrrrrrrr bub bub bub trogdyite")
+    time.sleep(0.25)
+    print("wuwuwuwuwuwuwup")
+    time.sleep(0.25)
+    print("bangarang")
+    time.sleep(0.25)
+    print("grrrrrrrrrrrrr im tripple t")
+    time.sleep(0.25)
+    print("brr brr patapim")
+    time.sleep(0.25)
+    print("tralalero tralala")
+    time.sleep(0.25)
+    print("grrrrrrrrrrrrr im tripple t")
 else:
     print("twin that aint an option restart the code")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# idea wall
+
+
+
+#
+#
+#
+#
+#
+#
+#
+#
