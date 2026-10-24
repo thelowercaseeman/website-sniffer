@@ -3,7 +3,9 @@ import random
 global level
 global rocupgrades
 global stillplaying
+global levelsimvar
 
+levelsimvar = True
 level = 0
 rocupgrades = 0
 stillplaying = True
@@ -185,27 +187,28 @@ def tripletartwork(): # self explanitory
 
 
 
-def rocdif4():
+def rocdif4(): # done
+    global level
     randomroc = random.randint(1,6)
     rocplayed = input("what would you like to play? 1 = rock, 2 = paper, 3 = scissors")
     if randomroc == 1:
         if rocplayed == "1" or rocplayed == "2" or rocplayed == "3":
             print("tie")
-            level + 1
+            level += 1
         else:
-            print("twin that aint an option restart the code")
+            print("twin that aint an option")
     if randomroc == 2:
         if rocplayed == "1":
             print("i had scissors, you win")
-            level + 2
+            level += 2
         elif rocplayed == "2":
             print("i had rock, you win")
-            level + 2
+            level += 2
         elif rocplayed == "3":
             print("i had paper, you win")
-            level + 2
+            level += 2
         else:
-            print("twin that aint an option restart the code")
+            print("twin that aint an option")
     if randomroc >= 3:
         if rocplayed == "1":
             print("i had paper, i win")
@@ -214,36 +217,265 @@ def rocdif4():
         elif rocplayed == "3":
             print("i had rock, i win")
         else:
+            print("twin that aint an option")
+
+
+
+def rocdif3(): # done
+    global level
+    randomroc = random.randint(1,3)
+    rocplayed = input("what would you like to play? 1 = rock, 2 = paper, 3 = scissors")
+    if rocplayed == "1":
+        if randomroc == 1:
+            print("i had paper, i win")
+        elif randomroc == 2:
+            print("tie")
+            level += 1
+        elif randomroc == 3:
+            print("i had scissors, you win")
+            level += 2
+    elif rocplayed == "2":
+        if randomroc == 1:
+            print("i had scissors, i win")
+        elif randomroc == 2:
+            print("tie")
+            level += 1
+        elif randomroc == 3:
+            print("i had rock, you win")
+            level += 2
+    elif rocplayed == "3":
+        if randomroc == 1:
+            print("i had rock, i win")
+        elif randomroc == 2:
+            print("tie")
+            level += 1
+        elif randomroc == 3:
+            print("i had paper, you win")
+            level += 2
+    else:
+        print("twin that aint an option restart the code")
+
+
+
+def rocdif2(): # done
+    global level
+    randomroc = random.randint(1,6)
+    rocplayed = input("what would you like to play? 1 = rock, 2 = paper, 3 = scissors")
+    if randomroc == 1:
+        if rocplayed == "1" or rocplayed == "2" or rocplayed == "3":
+            print("tie")
+            level += 1
+        else:
+            print("twin that aint an option restart the code")
+    elif randomroc == 2:
+        if rocplayed == "1":
+            print("i had paper, i win")
+        elif rocplayed == "2":
+            print("i had scissors, i win")
+        elif rocplayed == "3":
+            print("i had rock, i win")
+        else:
+            print("twin that aint an option restart the code")
+    elif randomroc == 3 or randomroc == 4 or randomroc == 5 or randomroc == 6:
+        if rocplayed == "1":
+            print("i had scissors, you win")
+            level += 2
+        elif rocplayed == "2":
+            print("i had rock, you win")
+            level += 2
+        elif rocplayed == "3":
+            print("i had paper, you win")
+            level += 2
+        else:
             print("twin that aint an option restart the code")
 
 
 
+def rocdif1(): # done
+    global level
+    rocplayed = input("what would you like to play? 1 = rock, 2 = paper, 3 = scissors")
+    if rocplayed == "1":
+        print("i had scissors, you win")
+        level += 2
+    elif rocplayed == "2":
+        print("i had rock, you win")
+        level += 2
+    elif rocplayed == "3":
+        print("i had paper, you win")
+        level += 2
+    else:
+        print("twin that aint an option restart the code")
 
+
+def levelsimmindreaderdif10(): # done
+    global level
+    mindreadingislowkeyeasy = random.randint(1,10)
+    mindreadingisez = str(mindreadingislowkeyeasy)
+    mindreadmaybe = input("read my mind twin, 1 to 10.")
+    if mindreadmaybe == "1" or mindreadmaybe == "2" or mindreadmaybe == "3" or mindreadmaybe == "4" or mindreadmaybe == "5" or mindreadmaybe == "6" or mindreadmaybe == "7" or mindreadmaybe == "8" or mindreadmaybe == "9" or mindreadmaybe == "10":
+        print("thats a number")
+        if mindreadingisez == mindreadmaybe:
+            print("wow u got my number YOU WIN restart the code twin")
+            level += 10
+        else:
+            print("YOU LOSE its okay tho restart the code twin")
+    else:
+        print("twin that aint an option restart the code")
+
+
+def levelsimmindreaderdif5(): # done
+    global level
+    mindreadingislowkeyeasy = random.randint(1,5)
+    mindreadingisez = str(mindreadingislowkeyeasy)
+    mindreadmaybe = input("read my mind twin, 1 to 10.")
+    if mindreadmaybe == "1" or mindreadmaybe == "2" or mindreadmaybe == "3" or mindreadmaybe == "4" or mindreadmaybe == "5" or mindreadmaybe == "6" or mindreadmaybe == "7" or mindreadmaybe == "8" or mindreadmaybe == "9" or mindreadmaybe == "10":
+        if mindreadingisez == "1":
+            print("wow u got my number YOU WIN restart the code twin")
+            level += 10
+        else:
+            print("YOU LOSE its okay tho restart the code twin")
+    else:
+        print("twin that aint an option restart the code")
+
+
+def levelsimmindreaderdif2(): # done
+    global level
+    mindreadingislowkeyeasy = random.randint(1,2)
+    mindreadingisez = str(mindreadingislowkeyeasy)
+    mindreadmaybe = input("read my mind twin, 1 to 10.")
+    if mindreadmaybe == "1" or mindreadmaybe == "2" or mindreadmaybe == "3" or mindreadmaybe == "4" or mindreadmaybe == "5" or mindreadmaybe == "6" or mindreadmaybe == "7" or mindreadmaybe == "8" or mindreadmaybe == "9" or mindreadmaybe == "10":
+        if mindreadingisez == "1":
+            print("wow u got my number YOU WIN restart the code twin")
+            level += 10
+        else:
+            print("YOU LOSE its okay tho restart the code twin")
+    else:
+        print("twin that aint an option restart the code")
+
+
+def levelsimmindreaderdif1(): # done
+    global level
+    mindreadmaybe = input("read my mind twin, 1 to 10.")
+    if mindreadmaybe == "1" or mindreadmaybe == "2" or mindreadmaybe == "3" or mindreadmaybe == "4" or mindreadmaybe == "5" or mindreadmaybe == "6" or mindreadmaybe == "7" or mindreadmaybe == "8" or mindreadmaybe == "9" or mindreadmaybe == "10":
+        print("wow u got my number YOU WIN restart the code twin")
+        level += 10
+    else:
+        print("twin that aint an option restart the code")
 
 
 
 def levelsim(): # a game
-    stillplaying = True
-    inputforlevelsim = "blah"
-    print("LEVEL:")
-    print(level)
-    print("__")
-    print("||"    )
-    print("||" )
-    print("||   __    __")
-    print("||___||____||_____")
-    print("| This is level sim, a game where you... level up!")
-    print("| Input '1' for rock paper scissors, '2' for mind reader!")
-    print("| Input 's' to go to shop")
-    inputforlevelsim = input("")
-    if inputforlevelsim == "1":
-        while stillplaying == True:
-            if rocupgrades == 0:
-                rocdif4()
-                print("keep going? 1 = yes, 2 = no")
-                keepgoingmaybe = input()
-                if keepgoingmaybe == "2":
-                    stillplaying = False
+    global rocupgrades
+    global levelsimvar
+    global level
+    mindreaderupgrades = 0
+    rocupgrades = 0
+    while levelsimvar == True:
+        stillplaying = True
+        inputforlevelsim = "blah"
+        levelsimupgrade = "blah"
+        print("LEVEL:")
+        print(level)
+        print("__")
+        print("||"    )
+        print("||" )
+        print("||   __    __")
+        print("||___||____||_____")
+        print("| This is level sim, a game where you... level up!")
+        print("| Input '1' for rock paper scissors, '2' for mind reader!")
+        print("| Input 's' to go to shop, 'esc' (the writing) to exit the game")
+        inputforlevelsim = input("")
+        if inputforlevelsim == "1":
+            while stillplaying == True:
+                if rocupgrades == 0:
+                    rocdif4()
+                    print("keep going? 1 = yes, 2 = no")
+                    keepgoingmaybe = input()
+                    if keepgoingmaybe == "2":
+                        stillplaying = False
+                elif rocupgrades == 1:
+                    rocdif3()
+                    print("keep going? 1 = yes, 2 = no")
+                    keepgoingmaybe = input()
+                    if keepgoingmaybe == "2":
+                        stillplaying = False
+                elif rocupgrades == 2:
+                    rocdif2()
+                    print("keep going? 1 = yes, 2 = no")
+                    keepgoingmaybe = input()
+                    if keepgoingmaybe == "2":
+                        stillplaying = False
+                elif rocupgrades == 3:
+                    rocdif1()
+                    print("keep going? 1 = yes, 2 = no")
+                    keepgoingmaybe = input()
+                    if keepgoingmaybe == "2":
+                        stillplaying = False
+        elif inputforlevelsim == "2":
+            while stillplaying == True:
+                if mindreaderupgrades == 0:
+                    levelsimmindreaderdif10()
+                    print("keep going? 1 = yes, 2 = no")
+                    keepgoingmaybe = input()
+                    if keepgoingmaybe == "2":
+                        stillplaying = False      
+                elif mindreaderupgrades == 1:
+                    levelsimmindreaderdif5()
+                    print("keep going? 1 = yes, 2 = no")
+                    keepgoingmaybe = input()
+                    if keepgoingmaybe == "2":
+                        stillplaying = False
+                elif mindreaderupgrades == 2:
+                    levelsimmindreaderdif2()
+                    print("keep going? 1 = yes, 2 = no")
+                    keepgoingmaybe = input()
+                    if keepgoingmaybe == "2":
+                        stillplaying = False
+                elif mindreaderupgrades == 3:
+                    levelsimmindreaderdif1()
+                    print("keep going? 1 = yes, 2 = no")
+                    keepgoingmaybe = input()
+                    if keepgoingmaybe == "2":
+                        stillplaying = False
+        elif inputforlevelsim == "s":
+            print("LEVEL:")
+            print(level)
+            print("__")
+            print("||"    )
+            print("||" )
+            print("||   __    __")
+            print("||___||____||_____")
+            print("| This is the shop, where you spend levels! Input 'win' to win, assuming you have 500 levels!")
+            print("| Input '1' to upgrade rock paper scissors for 5 levels!")
+            print("| Input '2' to upgrade mind reading for 50 levels!")
+            levelsimupgrade = input("")
+            if levelsimupgrade == "1" and level >= 5 and rocupgrades < 3:
+                print("you have upgraded rock paper scissors! returning to menu")
+                level = level - 5
+                rocupgrades += 1
+            elif levelsimupgrade == "1" and rocupgrades >= 3:
+                print("rock paper scissors is at its max level, returning to menu")
+            elif levelsimupgrade == "1" and level < 5 and rocupgrades < 3:
+                print("you dont have enough levels, returning to menu")
+            elif levelsimupgrade == "2" and level >= 50 and mindreaderupgrades < 3:
+                print("you have upgraded mind reading! returning to menu")
+                level = level - 50
+                mindreaderupgrades += 1
+            elif levelsimupgrade == "2" and mindreaderupgrades >= 3:
+                print("mind reading is at its max level, returing to menu")
+            elif levelsimupgrade == "2" and level < 50 and mindreaderupgrades < 3:
+                print("you dont have enough levels, returning to menu")
+            elif levelsimupgrade == "win" and level < 500:
+                print("you too poor twin")
+            elif levelsimupgrade == "win" and level >= 500:
+                print("YOU WIN!!!!!!!!!!!!!!")
+                levelsimvar = False
+            else:
+                print("twin that aint an option")
+        elif inputforlevelsim == "esc":
+            levelsimvar = False
+        else:
+            print("twin that aint an option")
 
 gameselector = input("what would you like to play? 1 = rock paper scissors, 2 = random stuff go, 3 = mind reader game, 4 = triple t artwork, 5 = level sim") # game selector
 if gameselector == "1":
@@ -260,7 +492,3 @@ elif gameselector == "5":
     levelsim()
 else:
     print("twin that aint an option restart the code")
-
-#while True:
-    if stillplaying == False:
-        levelsim()
