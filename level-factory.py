@@ -741,7 +741,16 @@ while exitquestion == False:
             print("Welcome to the achievements page! This also functions as a statistics page.")
             print("Level: " + str(level))
             print("Level multiplier: " + str(levelmultiplier))
-            print("I'm lying, I'm too lazy to actually add achievements.")
+            if level == 0 and levelmultiplier == 1:
+                print("Dawg, why are you looking at the achievements? You don't have anything!")
+            elif levelmultiplier == 1:
+                print("C'mon, get your first rebirth!")
+            elif levelmultiplier >= 2 and levelmultiplier < 1000:
+                print("There you go! You're getting there!")
+            elif levelmultiplier > 1000 and levelmultiplier < 1000000:
+                print("Why have you played this SO MUCH? This is some random game I made in a weekend!!")
+            else:
+                print("Dear god...")
             print("0 = go back to main menu")
             achievementpageexit = input("")
             if achievementpageexit == "0":
