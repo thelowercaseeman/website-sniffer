@@ -136,7 +136,7 @@ def randomstuffgo(): # triple t text adventure
             elif undertungbed == "2":
                 print("triple t hears you watching the tick tock and highkey throws a grenade under the bed and you DIE grr")
             elif undertungbed == "3":
-                print("triple t hears the rascist videos on that godforsaken platform and runs away through your wall, which causes your apartment building to collapse. he may or may not be back")
+                print("triple t hears the racist videos on that godforsaken platform and runs away through your wall, which causes your apartment building to collapse. he may or may not be back")
                 apartmentGONE = input("what you do? 1 = lowkey rob a store for fun, 2 = check for wounds")
                 if apartmentGONE == "1":
                     print("you have a giant scar on ur leg and you bleed out on the way, u die, restart the code twin")
@@ -505,11 +505,111 @@ def masonspurgatory(evilness): # done
     print("haha you waited this long for NOTHING")
 
 
+def distanceconverter():
+    print("What unit would you like to start with? 1 = centimeters, 2 = inches, 3 = feet, 4 = meters, 5 = yards, 6 = miles")
+    convertvalue1 = input("")
+    if convertvalue1 == "1":
+        print("what number?")
+        value = int(input(""))
+    elif convertvalue1 == "2":
+        print("what number?")
+        value = int(input()) * 2.54
+    elif convertvalue1 == "3":
+        print("what number?")
+        value = int(input("")) * 12 * 2.54
+    elif convertvalue1 == "4":
+        print("what number")
+        value = int(input("")) * 100
+    elif convertvalue1 == "5":
+        print("what number?")
+        value = int(input("")) * 3 * 12 * 2.54
+    elif convertvalue1 == "6":
+        print("what number?")
+        value = int(input("")) * 5280 * 12 * 2.54
+    else:
+        print("grr not an option restart code")
+    print("what unit do you want to convert to? same buttons")
+    convertvalue2 = input("")
+    if convertvalue2 == "1":
+        time.sleep(0.0000001)
+    elif convertvalue2 == "2":
+        value = value / 2.54
+    elif convertvalue2 == "3":
+        value = (value / 12) / 2.54
+    elif convertvalue2 == "4":
+        value = value / 100
+    elif convertvalue2 == "5":
+        value = ((value / 3) / 12) / 2.54
+    elif convertvalue2 == "6":
+        value = ((value / 5280) / 12) / 2.54
+    else:
+        print("twin that aint option restart code")
+    print(value)
+    
 
 
 
 
-gameselector = input("what would you like to play? 1 = rock paper scissors, 2 = random stuff go, 3 = mind reader game, 4 = triple t artwork, 5 = level sim, 6 = mason's purgatory, 7 = random stuff go the sequel") # game selector
+def timeunitconverter():
+    print("what unit would you like to start with? 1 = second, 2 = minute, 3 = hour, 4 = day, 5 = week, 6 = year")
+    convertvalue1 = input("")
+    if convertvalue1 == "1":
+        print("what number?")
+        value = ((int(input("")) / 60) /60) /24
+    elif convertvalue1 == "2":
+        print("what number?")
+        value = (int(input("")) / 60) / 24
+    elif convertvalue1 == "3":
+        print("what number")
+        value = int(input("")) / 24
+    elif convertvalue1 == "4":
+        print("what number?")
+        value = int(input(""))
+    elif convertvalue1 == "5":
+        print("what number?")
+        value = int(input("")) * 7
+    elif convertvalue1 == "6":
+        print("what number?")
+        value = int(input("")) * 365
+    else:
+        print("that aint an option twin")
+    print("what unit do you want to convert to? same buttons")
+    convertvalue2 = input("")
+    if convertvalue2 == "1":
+        value = value * 24 * 60 * 60
+    elif convertvalue2 == "2":
+        value = value * 24 * 60
+    elif convertvalue2 == "3":
+        value = value * 24
+    elif convertvalue2 == "4":
+        value = value
+    elif convertvalue2 == "5":
+        value = value / 7
+    elif convertvalue2 == "6":
+        value = value / 365
+    else:
+        print("grrrrrrrrrrrrrrrrrrrrrrrrrrr (its not supposed to say that)")
+    print(str(value))
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gameselector = input("what would you like to play? 1 = rock paper scissors, 2 = random stuff go, 3 = mind reader game, 4 = triple t artwork, 5 = level sim, 6 = mason's purgatory, 7 = random stuff go the sequel, 8 = distance unit converter, 9 = time unit converter") # game selector
 if gameselector == "1":
     rpsdif = input("what difficulty? 1 through 5")
     rockpaperscissors(rpsdif)
@@ -526,7 +626,8 @@ elif gameselector == "6":
     evilnessmason = input("how long is ur attention span? please give a number and ONLY A NUMBER")
     evilnessmason = int(evilnessmason)
     evilnessmason = evilnessmason * 10
-    masonspurgatory(evilnessmason)
+    while gameselector == "6":
+        masonspurgatory(evilnessmason)
 elif gameselector == "7":
     print("grrrrrrrrrrrrr im tripple t")
     time.sleep(0.25)
@@ -559,6 +660,49 @@ elif gameselector == "7":
     print("tralalero tralala")
     time.sleep(0.25)
     print("grrrrrrrrrrrrr im tripple t")
+    print("tralalero tralala")
+    time.sleep(0.25)
+    print("grrrrrrrrrrrrr im tripple t")
+    print("tralalero tralala")
+    time.sleep(0.25)
+    print("grrrrrrrrrrrrr im tripple t")
+    print("tralalero tralala")
+    time.sleep(0.25)
+    print("grrrrrrrrrrrrr im tripple t")
+    print("tralalero tralala")
+    time.sleep(0.25)
+    print("grrrrrrrrrrrrr im tripple t")
+    print("tralalero tralala")
+    time.sleep(0.25)
+    print("grrrrrrrrrrrrr im tripple t")
+    print("tralalero tralala")
+    time.sleep(0.25)
+    print("grrrrrrrrrrrrr im tripple t")
+    print("tralalero tralala")
+    time.sleep(0.25)
+    print("grrrrrrrrrrrrr im tripple t")
+    print("tralalero tralala")
+    time.sleep(0.25)
+    print("grrrrrrrrrrrrr im tripple t")
+    print("tralalero tralala")
+    time.sleep(0.25)
+    print("grrrrrrrrrrrrr im tripple t")
+    print("tralalero tralala")
+    time.sleep(0.25)
+    print("grrrrrrrrrrrrr im tripple t")
+    print("tralalero tralala")
+    time.sleep(0.25)
+    print("grrrrrrrrrrrrr im tripple t")
+    print("tralalero tralala")
+    time.sleep(0.25)
+    print("grrrrrrrrrrrrr im tripple t")
+
+elif gameselector == "8":
+    distanceconverter()
+elif gameselector == "9":
+    timeunitconverter()
+elif gameselector == "67":
+    print("why? why would you do that? theres no point. i never told you to type that. youre typing that for NO reason.")
 else:
     print("twin that aint an option restart the code")
 
